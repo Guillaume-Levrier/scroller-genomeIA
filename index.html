@@ -1,44 +1,42 @@
 <!DOCTYPE html><html><meta charset="UTF-8">
-<title>Digital Culture</title>
+<title>Genome Editing & Artificial Intelligence</title>
 <head>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--
 Guillaume Levrier
 This scroller is using D3.V5.
 -->
 
 </head>
-<body>
+<body>   
 <div class="container">
+    <i class="material-icons" id="backarrow" style="display:none; position:fixed;padding:5px;left:0px;bottom:0px;cursor:pointer;" onclick="smoothScrollTo(previous,true);">arrow_upward</i>
+
   <div id='graphic'>
+
     <div id='sections'>
       
-     <section id="slide2" class="step centerStep">
-        <div class="title">This brief tutorial will show you what PANDORÆ does.</div><br>
-        <i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('slide2bis')">arrow_downward</a></i>
-      </section>
- 
-      <section id="slide2bis" class="step centerStep">
-       <div class="title">As you noticed, you can click on the <strong>arrows</strong> to go down or back.</div><br>
-       You can also use your <strong>mouse wheel</strong> to navigate up and down.&nbsp;<br><br>
-       You can skip specific chapters and come back to this <strong>tutorial</strong> later.<br><br>
-       <br>
-       <i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('slide3')">arrow_downward</a></i>
-     </section>
       <section class="step">
-        <div class="title">Digital Culture</div>
-        The course's objective is to bring students to question a chosen aspect of their digital lives by:<br><br>
-        <ul>
-        <li>Choosing a <a onclick="smoothScrollTo('Mapping')">specific phenomenon</a> which at least partly relies on having an online presence </li>
-        <li>Exploring its features to bring out yet <a onclick="smoothScrollTo(second)">undiscovered/undisclosed data</a></li>
-        <li>Exploiting this data to shed a <a onclick="smoothScrollTo(third)">new light</a> on the chosen item</li>
-        </ul>
+        <div class="title">Edition du génome & intelligence artificielle</div>
+        <br>Les enjeux politiques de l'amélioration des capacités humaines:
+des biotechnologies à l'intelligence artificielle.<br><br>
+“The concern is that AI would take off on its own and redesign itself at an ever-increasing rate. Humans, 
+who are limited by slow biological evolution, couldn’t compete and would be superseded.” <br>
+<i>Brief Answers to the Big Questions: the final book from Stephen Hawking (2018).</i><br><br>
+<i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('slide2')">arrow_downward</a></i>
+
       </section>
-      <section id="first" class="step">
+      <section id="slide2" class="step">
         <div class="title">1 - Explorations</div>
         Students are expected to change their perspective on a <b>particular feature</b> of their online identity. Shifting from a user to researcher status is the first step on the path to <b>critical exploration</b>. That means crafting hypotheses and designing a method to validate or invalidate their underlyings.
+        
+        <ul>
+            <li>Choosing a <a onclick="smoothScrollTo('Mapping')">specific phenomenon</a> which at least partly relies on having an online presence </li>
+            <li>Exploring its features to bring out yet <a onclick="smoothScrollTo(second)">undiscovered/undisclosed data</a></li>
+            <li>Exploiting this data to shed a <a onclick="smoothScrollTo(third)">new light</a> on the chosen item</li>
+            </ul>
       </section>
       <section class="step">
         <div class="title">Lead examples</div>
