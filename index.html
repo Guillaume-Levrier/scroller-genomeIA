@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><meta charset="UTF-8">
+<title>Digital Culture</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<!--
+Guillaume Levrier
+This scroller is using D3.V5.
+-->
+
+</head>
+<body>
+<div class="container">
+  <div id='graphic'>
+    <div id='sections'>
+      
+     <section id="slide2" class="step centerStep">
+        <div class="title">This brief tutorial will show you what PANDORÆ does.</div><br>
+        <i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('slide2bis')">arrow_downward</a></i>
+      </section>
+ 
+      <section id="slide2bis" class="step centerStep">
+       <div class="title">As you noticed, you can click on the <strong>arrows</strong> to go down or back.</div><br>
+       You can also use your <strong>mouse wheel</strong> to navigate up and down.&nbsp;<br><br>
+       You can skip specific chapters and come back to this <strong>tutorial</strong> later.<br><br>
+       <br>
+       <i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('slide3')">arrow_downward</a></i>
+     </section>
+      <section class="step">
+        <div class="title">Digital Culture</div>
+        The course's objective is to bring students to question a chosen aspect of their digital lives by:<br><br>
+        <ul>
+        <li>Choosing a <a onclick="smoothScrollTo('Mapping')">specific phenomenon</a> which at least partly relies on having an online presence </li>
+        <li>Exploring its features to bring out yet <a onclick="smoothScrollTo(second)">undiscovered/undisclosed data</a></li>
+        <li>Exploiting this data to shed a <a onclick="smoothScrollTo(third)">new light</a> on the chosen item</li>
+        </ul>
+      </section>
+      <section id="first" class="step">
+        <div class="title">1 - Explorations</div>
+        Students are expected to change their perspective on a <b>particular feature</b> of their online identity. Shifting from a user to researcher status is the first step on the path to <b>critical exploration</b>. That means crafting hypotheses and designing a method to validate or invalidate their underlyings.
+      </section>
+      <section class="step">
+        <div class="title">Lead examples</div>
+        What should students be looking for? Some examples, batched by theme, are listed below:
+        <ul style="list-style-type: none;">
+        <li><a onclick="smoothScrollTo(Mapping)">#Territories</a></li>
+        <li><a onclick="smoothScrollTo(PornVsReality)">#PornVsReality</a></li>
+        <li><a onclick="smoothScrollTo(NationBuilder)">#NationBuilder</a></li>
+        <li><a onclick="smoothScrollTo(MeToo)">#MeToo</a></li>
+        <li><a onclick="smoothScrollTo(Cash)">#Cash&Trash</a></li>
+        <li><a onclick="smoothScrollTo(Meta)">#Meta</a></li>
+        </ul>
+      </section>
+      <section id="Mapping" class="step">
+        <div class="title">#Territories</div>
+        <ul>
+        <li><a href="//www.shipmap.org" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">Flux/flows</a> going through the train station/harbour? Humans or goods? Quantifiable or not? Manageable or not? By whom?</li>
+        <li><a href="https://projects.propublica.org/graphics/levees" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">Educating</a> about <a href="https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html?action=click&module=Editors%20Picks&pgtype=Homepage" target="_blank">environmental</a>/public safety issues</li>
+        <li>How do people move, among <a href="https://medium.com/blablacar-tech/how-strategy-and-geographical-analytics-grow-together-at-blablacar-f27adfdd5e19" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">BlablaCar</a>, Uber, bicycle apps, or more traditional means</li>
+        <li>Online/local <a href="https://people.missouristate.edu/michaelcarlie/what_I_learned_about/gangs/graffiti_and_other_identifiers.htm" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">territories</a>: graph/hip-hop crews</li>
+        <li>Mapping the local UNESCO heritage on the ground vs online</li>
+        <li>Similar Selfies: finding  <a href="https://player.vimeo.com/video/253334732?autoplay=1&muted=1" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">photo spots</a> liked by tourists and aggregate identical pictures using GPS coordinates and/or ML</li>
+        </ul>
+      </section>
+      <section id="PornVsReality" class="step">
+        <div class="title">#PornVsReality</div>
+        <ul>
+          <li>	Online generalist <a href="http://www.lefigaro.fr/actualite-france/2018/05/31/01016-20180531ARTFIG00157-vivastreet-une-information-judiciaire-ouverte-pour-proxenetisme-aggrave.php" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">platforms</a> with “massage” sections connecting freelance sex workers with potential clients (for a fee)
+    </li><li>	<a href="https://www.francetvinfo.fr/choix/cette-histoire-me-pourrit-la-vie-quand-d-anciens-anonymes-du-porno-sont-rattrapes-par-leur-passe_2600844.html" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">“Amateur” porn</a> shot by local/national studios and branded as such.
+    </li><li>	The past, present and future of streaming: from CamGirls&Boys to twitch videogame players? Unknown global streamers or local celebrities?
+    </li><li>	<a href="https://www.independent.co.uk/life-style/gadgets-and-tech/pornhub-twitter-deepfakes-ban-ai-celebrity-faces-porn-actress-bodies-emma-watson-jennifer-lawrence-a8199131.html" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">Deepfake</a> democratization: from movie starts to coworkers/classmates, what are the social impacts?
+    </li><li>	Tinder vs Meetic: connecting humans with romantic intents</li>
+        </ul>
+      </section>
+      <section id="NationBuilder" class="step">
+        <div class="title">#NationBuilder</div>
+        <ul>
+          <li>	Politics/<a href="https://www.web.archive.org/web/20111210075538/http://www.edouardphilippe.com:80/" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">politicians</a> in the age of (ageing?) social media/echo chambers/blogs.
+  </li><li>	Grassroots movements, between radical online/local communities and wider groups (i.e. national political parties).
+  </li><li> Politics & Videogames: shaping a political indentity through <a href="http://papersplea.se/" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">border control</a>, <a href="http://burymemylove.arte.tv/" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">migration</a>, <a href="http://www.thiswarofmine.com/" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">war as a civilian</a> or <a href="http://nottonightgame.com" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">brexit</a> ?
+  </li><li>	Viral messages and truth, a complicated relationship
+  </li><li>	Delivering the <a href="https://flashdrivesforfreedom.org" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">internet by USB</a> to NK
+  </li><li>	Gypsies up for a <a href="https://www.youtube.com/embed/FplXagRcNQM?autoplay=1&mute=1#modestbranding=1&controls=0" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">fight</a>, from YouTube to violence on the ground
+</li>
+        </ul>
+      </section>
+      <section id="MeToo" class="step">
+        <div class="title">#MeToo</div>
+        <ul>
+          <li>	From a global movement to a <a href="https://supchina.com/podcast/chinas-metoo-momentum/" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">local reality</a>?
+          </li><li>	Feminism in connected smaller cities/communities</li>
+        </ul>
+      </section>
+      <section  id="Cash"  class="step">
+        <div class="title">#Cash&Trash</div>
+        <ul>
+          <li>	Amazon versus La Galerne
+      </li><li>	Hotels versus Airbnb/Booking and the like
+      </li><li>	Comments/Stars/Ratings, building trust among fake reviews and <a href="https://5euros.com/service/12143/vous-permettre-d-acheter-1000-followers-reels-instagram" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">bot farms</a>
+
+      </li><li>	Delivering goods and services: freelancers unite?</li>
+        </ul>
+      </section>
+      <section id="Meta" class="step">
+        <div class="title">#Meta</div>
+        <ul>
+<li>	Twitter use in the near area compared to other areas in the country, or different comparable areas
+</li><li>	Information flow: where does the news come from in this area?
+</li><li>	Information security: what is available/accessible on the internet? Are my passwords public? Has my identity been compromised to some extent?
+</li><li>	Local YouTubers/Instagramers?
+</li><li>	Local blogers?</li>
+</ul>
+</section>
+<section id="second" class="step">
+  <div class="title">2 - Finding/refining data</div>
+  What information can you get on your target? What can be quantitatively or qualitatively measured? What variables can you isolate? Can you interview its users? Access some the services' data? Be inventive, try not to use proxies.
+
+</section>
+<section id="third" class="step">
+  <div class="title">3 - Shedding a new light</div>
+Find the most relevant way to present your results. Grab your public's attention and guide them through an adventure that will make them understand why the phenomenon you studied is also crucial to their own (digital) lives.
+</section>
+
+<section id="squad" class="step">
+  <div class="title">Squad system</div>
+Students are grouped by squads. Squads are premade by teachers. 70% of the final grade is common to a squad. Freeriding is dangerous: the squad as a whole is designed to have major skill gaps to overcome as a team. If crew members are missing, the boat just won't float. Squads will work using a <a onclick="smoothScrollTo(Final)">private channel/thread</a> (accessible by the TA) on a message service.
+</section>
+
+<section id="grades" class="step">
+  <div class="title">Grades</div>
+The final grade is based on your group thread and the final output. The grade is built as a sequence: if the previous item is mediocre, chances that the following ones are good are probably quite thin. Any weakness in the final output will be linked to one of those items, and will therefore be documented by your discussion in your <a onclick="smoothScrollTo(Final)">group thread</a>.
+</section>
+
+<section id="rules" class="step">
+  <div class="title">Rules</div>
+Students are obviously expected to abide by the same framework of rules in use for any other course.
+</section>
+
+<section id="final" class="step">
+<div class="title">Final remarks</div>
+
+<ul>
+<li>Students are given access to 6 online lectures covering the Digital Culture syllabus.</li>
+<li>Students will attend two days of technology workshops, covering topics such as data management, HTML/CSS/JS basics, video editing and the like. </li>
+<li>Each team will meet with a referent TA at least twice during the semester.</li>
+<li>Each team will be granted access to an online chat server (Slack/Discord), where they can organise and ask for a TA's help. Schedule and important information will be dispatched on a common channel.</li>
+<li>Each team is expected to produce a digital exploration to be published on the university's internal network. The most interesting ones might be shared to a wider audience.</li>
+</ul>
+</section>
+
+    </div><img src="img/scpologo.png" id="scpologo">
+    <div id='vis'>  <iframe id="iframe" src="schema.html" name="viewer"  allow="autoplay; encrypted-media" allowfullscreen width="600"></iframe>
+      <div id="source"></div>
+    </div>
+    <div id="extra-space">
+    </div>
+  </div>
+</div>
+
+<script src="js/d3.v5.min.js"></script>
+<script src="js/scroller.js"></script>
+
+</body>
+</html>
