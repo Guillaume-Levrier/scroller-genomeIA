@@ -95,8 +95,8 @@ scroll(d3.selectAll('.step'));
                               let sourceCredit = "Source/Credit: ";
                               switch (index) {
                                 case 0: //starting point
-                                      document.getElementById('iframe').src = "schema.html";
-                                      document.getElementById('source').innerText = sourceCredit + "Loop built from Genome 'Editing with CRISPR-Cas9' by McGovern Institute for Brain Research at MIT";
+                                      document.getElementById('iframe').src = "videoloop1.html";
+                                      document.getElementById('source').innerText = sourceCredit + "Wired - https://www.wired.com/story/wired-guide-to-crispr/";
                                       break;
                                 case 1: //1 
                                       document.getElementById('iframe').src = "explorations.html";
