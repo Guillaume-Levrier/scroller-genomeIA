@@ -91,7 +91,7 @@ scroll(d3.selectAll('.step'));
         scroll.on('active', function (index) {
                 d3.selectAll('.step').style('opacity', function (d, i) { return i === index ? 1 : 0.1; });
                              
-
+// HE jiankui video https://www.youtube.com/watch?v=th0vnOmFltc
                               let sourceCredit = "Source/Credit: ";
                               switch (index) {
                                 case 0: //starting point
@@ -99,12 +99,12 @@ scroll(d3.selectAll('.step'));
                                       document.getElementById('source').innerText = sourceCredit + "Wired - https://www.wired.com/story/wired-guide-to-crispr/";
                                       break;
                                 case 1: //1 
-                                      document.getElementById('iframe').src = "explorations.html";
+                                      document.getElementById('iframe').src = "";
                                       document.getElementById('source').innerText = "";
                                       break;
             
                                 case 2: //Theroux
-                                      document.getElementById('iframe').src = "theroux.html";
+                                      document.getElementById('iframe').src = "";
                                       document.getElementById('source').innerText = sourceCredit + "@louistherouxbot by Andy Kelly - Twitter";
                                       break;
             
