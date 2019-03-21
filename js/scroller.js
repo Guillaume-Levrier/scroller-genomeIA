@@ -99,7 +99,9 @@ scroll(d3.selectAll('.step'));
                                       document.getElementById('source').innerText = sourceCredit + "Wired - https://www.wired.com/story/wired-guide-to-crispr/";
                                       break;
                                 case 1: //1 
-                                      document.getElementById('iframe').src = "";
+                                      document.getElementById('iframe').src = "img/agamben-foucault.png";
+                                      document.getElementById('iframe').contentDocument.body.width = '600px';
+
                                       document.getElementById('source').innerText = "";
                                       break;
             
