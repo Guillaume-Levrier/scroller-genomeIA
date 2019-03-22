@@ -105,14 +105,23 @@ scroll(d3.selectAll('.step'));
                                 case "foucagamb":  
                                 iframeContent.innerHTML = '<img width="600px" src="img/agamben-foucault.png"/>';
 
-                                      source.innerText = "";
+                                      source.innerText = sourceCredit + "@photosource";
                                       break;
             
                                 case "accident": 
-                                     // iframe.src = "";
-                                      //source.innerText = sourceCredit + "@louistherouxbot by Andy Kelly - Twitter";
+                                iframeContent.innerHTML = '<img width="600px" src="img/virilio.jpg"/>';
+                                source.innerText = sourceCredit + "@photosource";
                                       break;
-            
+
+                                case "plan": 
+                                iframeContent.innerHTML = '';
+                                source.innerText = sourceCredit + "@photosource";
+                                      break;
+
+                                case "DNAexplainer": 
+                                iframeContent.innerHTML = '<img width="600px" src="img/DNA_Nucleotides.jpg"/>';
+                                source.innerText = sourceCredit + "OpenStax Anatomy and Physiology";
+                                      break;
                                 case "crisprXplainer": 
                                 iframeContent.innerHTML = '<video id="video" loop="" autoplay="" muted="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/crisprExplainerloop.mp4"  type="video/mp4"></video>';
                                       source.innerText = sourceCredit + "";
