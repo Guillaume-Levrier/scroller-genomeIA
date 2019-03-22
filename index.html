@@ -12,45 +12,41 @@ This scroller is using D3.V5.
 </head>
 <body>   
 <div class="container">
-    <i class="material-icons" id="backarrow" style="display:none; position:fixed;padding:5px;left:0px;bottom:0px;cursor:pointer;" onclick="smoothScrollTo(previous,true);">arrow_upward</i>
-
+    
   <div id='graphic'>
 
     <div id='sections'>
-      
-      <section class="step">
+
+      <i class="material-icons" class="arrowDown" id="backarrow" style="display:none; position:fixed;padding:5px;left:0px;top:0px;cursor:pointer;z-index:5;" onclick="smoothScrollTo(previous,true);">arrow_leftward</i>  
+
+      <section id='introslide' class="step">
         <div class="title">Edition du génome & intelligence artificielle</div>
         <br>Les enjeux politiques de l'amélioration des capacités humaines:
 des biotechnologies à l'intelligence artificielle.<br><br>
 “The concern is that AI would take off on its own and redesign itself at an ever-increasing rate. Humans, 
 who are limited by slow biological evolution, couldn’t compete and would be superseded.” <br>
 <i>Brief Answers to the Big Questions: the final book from Stephen Hawking (2018).</i><br><br>
-<i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('slide2')">arrow_downward</a></i>
+<br><br><div class="arrowDown"><i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('foucagamb')">arrow_downward</a></i></div>
 
       </section>
-      <section id="slide2" class="step">
+      <section id="foucagamb" class="step">
         <div class="title">Biopolitique et technologie de gouvernement</div><br><br>
 Le <strong>pouvoir souverain</strong>, de "l'administration des corps et la gestion calculatrice de la vie" à "la production d’un corps biopolitique [en] est l’acte original". 
 <br><br>
 <i>Michel Foucault in La Volonté de savoir (1976) <br> Giorgio Agamben in Homo Sacer (1997)
 </i>     
-
+<br><br><div class="arrowDown"><i class="material-icons"><a class="arrowDown" onclick="smoothScrollTo('accident')">arrow_downward</a></i></div>
       </section>
-      <section class="step">
+
+      <section id="accident" class="step">
         <div class="title">En route pour l'accident</div><br><br>
         "La vitesse est responsable du développement exponentiel […] des accidents écologiques [...]. N’oublions pas que c’est l’usage intensif de l’ordinateur qui a favorisé le décodage de la carte du génome humain".
         <br><br><i>Paul Virilio - L'accident Originel (2005)</i>
       </section>
-      <section id="Mapping" class="step">
-        <div class="title">#Territories</div>
-        <ul>
-        <li><a href="//www.shipmap.org" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">Flux/flows</a> going through the train station/harbour? Humans or goods? Quantifiable or not? Manageable or not? By whom?</li>
-        <li><a href="https://projects.propublica.org/graphics/levees" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">Educating</a> about <a href="https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html?action=click&module=Editors%20Picks&pgtype=Homepage" target="_blank">environmental</a>/public safety issues</li>
-        <li>How do people move, among <a href="https://medium.com/blablacar-tech/how-strategy-and-geographical-analytics-grow-together-at-blablacar-f27adfdd5e19" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">BlablaCar</a>, Uber, bicycle apps, or more traditional means</li>
-        <li>Online/local <a href="https://people.missouristate.edu/michaelcarlie/what_I_learned_about/gangs/graffiti_and_other_identifiers.htm" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">territories</a>: graph/hip-hop crews</li>
-        <li>Mapping the local UNESCO heritage on the ground vs online</li>
-        <li>Similar Selfies: finding  <a href="https://player.vimeo.com/video/253334732?autoplay=1&muted=1" onclick="document.getElementById('source').innerHTML = '<a href='+this.href+' '+sourceTargetBlank+'>'+this.href+'</a>'" target="viewer">photo spots</a> liked by tourists and aggregate identical pictures using GPS coordinates and/or ML</li>
-        </ul>
+
+      <section id="crisprXplainer" class="step">
+        <div class="title">CRISPR-CasX±1</div>
+        Les plus connues, les plus "faciles" à manier et les plus versatiles des nucléases sont celles de type CRISPR-Cas.
       </section>
       <section id="PornVsReality" class="step">
         <div class="title">#PornVsReality</div>
@@ -138,10 +134,12 @@ Students are obviously expected to abide by the same framework of rules in use f
 </ul>
 </section>
 
-    </div><img src="img/scpologo.png" id="scpologo">
-    <div id='vis'>  <iframe id="iframe" src="schema.html" name="viewer"  allow="autoplay; encrypted-media" allowfullscreen width="600"></iframe>
+    </div>
+    <img src="img/scpologo.png" id="scpologo">
+    <div id='vis'>  <iframe id="iframe" name="viewer" allow="autoplay; encrypted-media" allowfullscreen width="600"></iframe>
       <div id="source"></div>
     </div>
+    
     <div id="extra-space">
     </div>
   </div>
