@@ -149,9 +149,24 @@ scroll(d3.selectAll('.step'));
             
                               case "guangdong1": 
                               iframeContent.innerHTML = '<img width="600px" src="img/embryon16.png"/>';
-                              source.innerHTML = sourceCredit + "Plan d'Auschwitz - février 1942 - utilisé en couverture de la première édition d'<i>Homo Sacer</i>";
+                              source.innerHTML = sourceCredit + "";
                               break;
 
+                              case "mitalipov": 
+                              iframeContent.innerHTML = '<img width="450px" src="img/mitalipov.jpg"/>';
+                              source.innerHTML = sourceCredit + "Leah Nash for The New York Times";
+                              break;
+                              
+
+                              case "hejiankui": 
+                              iframeContent.innerHTML = '<video id="video" loop="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/jiankuivid.mp4"  type="video/mp4"></video>';
+                              source.innerHTML = sourceCredit + "";
+                              break;
+
+                              case "article": 
+                              iframeContent.innerHTML = '<img width="600px" src="img/article.png"/>';
+                              source.innerHTML = sourceCredit + "https://news.rthk.hk/rthk/ch/component/k2/1439157-20190121.htm";
+                              break;
                               
                               };
                         });
