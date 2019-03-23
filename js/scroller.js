@@ -117,7 +117,7 @@ scroll(d3.selectAll('.step'));
                                 iframeContent.innerHTML = 
                                 "<span style='font-family:sans-serif'><h2>I - L’édition du génome est une technique prométhéenne qui incarne le processus par lequel la science crée de nouveaux pouvoirs.</h2>"+
                                 "<h3><i>A/ Effacer, ajouter, modifier l’ADN : entrer dans l’âge des nucléases<br>B/ De la technique à la science, de la science au pouvoir : biosphère et biopouvoir au XXIème siècle</i></h3>"+
-                                "<h2>II – Les nucléases potentialisent fortement le génie génétique, alors que la plupart des Etats peinent à prendre à bras le corps la question du vivant en politique</h2>"+
+                                "<h2>II – Les nucléases potentialisent fortement le génie génétique, alors que la plupart des Etats peinent à prendre à bras le corps la question du vivant en politique.</h2>"+
                                 "<h3><i>A/ Le développement des capacités scientifiques en génie génétique s’est brusquement accéléré avec CRISPR<br>B/ Tous les Etats ne sont pas égaux face à la nécessité de débattre du vivant</i></h3>"
                                 +"</span>";
                                 source.innerText = sourceCredit + "@photosource";
@@ -147,6 +147,12 @@ scroll(d3.selectAll('.step'));
                               source.innerText = sourceCredit + "";
                               break;
             
+                              case "guangdong1": 
+                              iframeContent.innerHTML = '<img width="600px" src="img/embryon16.png"/>';
+                              source.innerHTML = sourceCredit + "Plan d'Auschwitz - février 1942 - utilisé en couverture de la première édition d'<i>Homo Sacer</i>";
+                              break;
+
+                              
                               };
                         });
 
