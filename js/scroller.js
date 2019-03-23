@@ -105,12 +105,12 @@ scroll(d3.selectAll('.step'));
                                 case "foucagamb":  
                                 iframeContent.innerHTML = '<img width="600px" src="img/agamben-foucault.png"/>';
 
-                                      source.innerText = sourceCredit + "@photosource";
+                                      source.innerText = sourceCredit + "NA";
                                       break;
             
                                 case "accident": 
                                 iframeContent.innerHTML = '<img width="600px" src="img/virilio.jpg"/>';
-                                source.innerText = sourceCredit + "@photosource";
+                                source.innerText = sourceCredit + "NA";
                                       break;
 
                                 case "plan": 
@@ -120,7 +120,7 @@ scroll(d3.selectAll('.step'));
                                 "<h2>II – Les nucléases potentialisent fortement le génie génétique, alors que la plupart des Etats peinent à prendre à bras le corps la question du vivant en politique.</h2>"+
                                 "<h3><i>A/ Le développement des capacités scientifiques en génie génétique s’est brusquement accéléré avec CRISPR<br>B/ Tous les Etats ne sont pas égaux face à la nécessité de débattre du vivant</i></h3>"
                                 +"</span>";
-                                source.innerText = sourceCredit + "@photosource";
+                                source.innerText ="";
                                       break;
 
                                 case "DNAexplainer": 
@@ -129,12 +129,12 @@ scroll(d3.selectAll('.step'));
                                       break;
                                 case "crisprXplainer": 
                                 iframeContent.innerHTML = '<video id="video" loop="" autoplay="" muted="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/crisprExplainerloop.mp4"  type="video/mp4"></video>';
-                                source.innerText = sourceCredit + "";
+                                source.innerText = sourceCredit + "MIT";
                                 break;
 
                                 case "anthropocene": 
                                 iframeContent.innerHTML = '<video id="video" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/latourAnthropocene.mp4"  type="video/mp4"></video>';
-                                source.innerText = sourceCredit + "";
+                                source.innerText = sourceCredit + "Latour Minute // L' Anthropocène";
                                 break;
                                 
                                 case "sacer": 
@@ -149,7 +149,7 @@ scroll(d3.selectAll('.step'));
             
                               case "guangdong1": 
                               iframeContent.innerHTML = '<img width="600px" src="img/embryon16.png"/>';
-                              source.innerHTML = sourceCredit + "";
+                              source.innerHTML =  "DOI: 10.1038/nature23305";
                               break;
 
                               case "mitalipov": 
@@ -160,11 +160,11 @@ scroll(d3.selectAll('.step'));
 
                               case "hejiankui": 
                               iframeContent.innerHTML = '<video id="video" loop="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/jiankuivid.mp4"  type="video/mp4"></video>';
-                              source.innerHTML = sourceCredit + "";
+                              source.innerHTML = sourceCredit + "He Jiankui";
                               break;
 
                               case "article": 
-                              iframeContent.innerHTML = '<img width="600px" src="img/article.png"/>';
+                              iframeContent.innerHTML = '<img width="450px" src="img/article.png"/>';
                               source.innerHTML = sourceCredit + "https://news.rthk.hk/rthk/ch/component/k2/1439157-20190121.htm";
                               break;
                               
