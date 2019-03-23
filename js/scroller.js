@@ -156,8 +156,11 @@ scroll(d3.selectAll('.step'));
                               iframeContent.innerHTML = '<img width="450px" src="img/mitalipov.jpg"/>';
                               source.innerHTML = sourceCredit + "Leah Nash for The New York Times";
                               break;
-                              
-
+                              case "sputnik": 
+                              iframeContent.innerHTML = '<video id="video" loop="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/putin-ethics.mp4"  type="video/mp4"></video>';
+                              source.innerHTML = sourceCredit + "Ruptly";
+                              break;
+                              putin-ethics.mp4
                               case "hejiankui": 
                               iframeContent.innerHTML = '<video id="video" loop="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/jiankuivid.mp4"  type="video/mp4"></video>';
                               source.innerHTML = sourceCredit + "He Jiankui";
