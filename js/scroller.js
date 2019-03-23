@@ -136,6 +136,12 @@ scroll(d3.selectAll('.step'));
                                 iframeContent.innerHTML = '<video id="video" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/latourAnthropocene.mp4"  type="video/mp4"></video>';
                                 source.innerText = sourceCredit + "";
                                 break;
+                                
+                                case "sacer": 
+                                iframeContent.innerHTML = '<img width="600px" src="img/auschwitz-master-plan-fev42.jpg"/>';
+                                source.innerHTML = sourceCredit + "Plan d'Auschwitz - février 1942 - utilisé en couverture de la première édition d'<i>Homo Sacer</i>";
+                                break;
+
                               case "humanCRISPR": 
                               iframeContent.innerHTML = '<video id="video" loop="" autoplay="" muted="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/zaynertrailer.mp4"  type="video/mp4"></video>';
                               source.innerText = sourceCredit + "";
