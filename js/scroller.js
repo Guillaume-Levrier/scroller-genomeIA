@@ -172,7 +172,7 @@ scroll(d3.selectAll('.step'));
                               break;
 
                               case "conclusion": 
-                              iframeContent.innerHTML = '<video id="video" loop="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/JenniferDoudna.mp4"  type="video/mp4"></video>';
+                              iframeContent.innerHTML = '<video id="video" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/JenniferDoudna.mp4"  type="video/mp4"></video>';
                               source.innerHTML = "UCSB - https://www.youtube.com/watch?v=J2FrFQL90bE";
                               break;
                               };
