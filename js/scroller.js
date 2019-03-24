@@ -110,7 +110,7 @@ scroll(d3.selectAll('.step'));
             
                                 case "accident": 
                                 iframeContent.innerHTML = '<img width="600px" src="img/virilio.jpg"/>';
-                                source.innerText = sourceCredit + "NA";
+                                source.innerText = sourceCredit + "AFP / DANIEL JANIN";
                                       break;
 
                                 case "plan": 
@@ -160,7 +160,7 @@ scroll(d3.selectAll('.step'));
                               iframeContent.innerHTML = '<video id="video" loop="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/putin-ethics.mp4"  type="video/mp4"></video>';
                               source.innerHTML = sourceCredit + "Ruptly";
                               break;
-                              putin-ethics.mp4
+                              
                               case "hejiankui": 
                               iframeContent.innerHTML = '<video id="video" loop="" onclick="this.paused ? this.play() : this.pause();" width="600px;"><source src="video/jiankuivid.mp4"  type="video/mp4"></video>';
                               source.innerHTML = sourceCredit + "He Jiankui";
@@ -170,7 +170,11 @@ scroll(d3.selectAll('.step'));
                               iframeContent.innerHTML = '<img width="450px" src="img/article.png"/>';
                               source.innerHTML = sourceCredit + "https://news.rthk.hk/rthk/ch/component/k2/1439157-20190121.htm";
                               break;
-                              
+
+                              case "conclusion": 
+                              iframeContent.innerHTML = '';
+                              source.innerHTML = "";
+                              break;
                               };
                         });
 
