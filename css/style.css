@@ -40,9 +40,8 @@
 }
 
 .step {
-  display: block;
-  margin-bottom: 200px;
-font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+  margin-bottom: 600px;
+  font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #767678;

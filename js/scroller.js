@@ -40,7 +40,7 @@ function scroller() {
   }
 
   function position() {
-    var pos = window.pageYOffset - 10 - containerStart;
+    var pos = window.pageYOffset - 100 - containerStart;
     var sectionIndex = d3.bisect(sectionPositions, pos);
     sectionIndex = Math.min(sections.size() - 1, sectionIndex);
 
@@ -78,9 +78,10 @@ const smoothScrollTo = (target,hide) => {
   var sectionList = document.querySelectorAll("section");                                                  // Create an array with all sections
   previous = sectionList[activeIndex].id;                                                                  // Store current section ID
   document.getElementById('backarrow').style.display = "inline-block";                                     // Display "previous" arrow button
-  document.getElementById(target).scrollIntoView({ behavior: 'smooth' });                                  // Scroll smoothly to target
+  document.getElementById(target).scrollIntoView({ behavior: 'smooth',block: "center" });                                  // Scroll smoothly to target
   if (hide === true) {document.getElementById('backarrow').style.display = "none"};                        // If order comes from the "previous" arrow button, hide this button
 };
+
 
 const display = () => {
 
